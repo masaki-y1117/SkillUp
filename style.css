@@ -19,9 +19,12 @@ header {
   height: 70px;
 }
 
-.nav {
+nav {
   display: flex;
-  float: right;
+}
+
+.nav {
+  display: inline-block;
 }
 
 .nav-list {
@@ -304,4 +307,75 @@ footer {
   font-size: 16px;
   color: #fafafa;
   line-height: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 50px;
+  }
+
+  .header-content {
+    width: 90%;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .menu-box {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #fafafa;
+    float: right;
+  }
+
+  .list-bar:first-child {
+    margin-top: 10px;
+  }
+
+  .list-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #fafafa;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .main-visual {
+    width: 90%;
+    background-image: url("img3/code.png");
+  }
+
+  .main-visual h3 {
+    font-size: 40px;
+  }
+
+  .main-visual p {
+    font-size: 18px;
+  }
+
+  .portfolio-content {
+    width: 90%;
+  }
+
+  .portfolio-box {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    flex-wrap: none;
+  }
+
+  .box {
+    margin-right: 0;
+  }
+
+  .box1,.box3,.box5{
+    display: none;
+  }
 }
